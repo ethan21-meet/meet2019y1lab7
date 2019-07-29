@@ -1,3 +1,5 @@
+
+
 import turtle
 import random #We'll need this later in the lab
 
@@ -26,3 +28,21 @@ snake.shape("square")
 #Hide the turtle object (it's an arrow - we don't need to see it)
 turtle.hideturtle()
 
+#Function to draw a part of the snake on the screen
+
+def new_stamp():
+    snake_pos = snake.__pos_() #Get snake’s position
+    #Append the position tuple to pos_list
+    pos_list_.append(snake_pos) 
+    #snake.stamp() returns a stamp ID. Save it in some variable         
+    snake_stamp = snake.stamp()
+    #append that stamp ID to stamp_list.     
+    stamp.list_.append(snake_stamp)
+    
+
+for jesus in range(0, START_LENGTH):
+    x_pos=snake.xcor()
+    y_pos=snake.ycor()
+    x_pos+=SQUARE_SIZE
+    snake.goto(x_pos, y_pos)
+    new_stamp()
